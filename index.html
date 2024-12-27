@@ -16,6 +16,9 @@
 		<title>Áo Polo Nam Local Brand ODIN CLUB, ÁO Polo CỘC TAY CÓ CỔ FORM RỘNG NAM NỮ OVERSIZE</title>
 	</head>
 	<body>
+		<audio id="hoverSound" preload="auto" loop> 
+		<source src="music-happybirthday.mp3">
+		</audio>
 		<div class="container">
 			<div class="boxcontainer">
 				<div class="image">
@@ -145,5 +148,38 @@
 		close.addEventListener('click', function () {
 			boxmail.classList.remove('active');
 		});
+
+
+		// Lấy phần tử âm thanh
+const hoverSound = document.getElementById('hoverSound');
+
+// Tải trước file âm thanh
+hoverSound.preload = "auto";
+hoverSound.load();
+
+// Đảm bảo nhạc đã sẵn sàng trước khi người dùng hover
+hoverSound.addEventListener('canplaythrough', () => {
+    console.log("File âm thanh đã sẵn sàng để phát!");
+});
+
+// Phát nhạc ngay khi di chuột vào màn hình
+document.addEventListener('mouseenter', () => {
+    if (hoverSound.readyState >= 3) { // Đảm bảo file nhạc đã sẵn sàng
+        hoverSound.currentTime = 0; // Đặt lại về đầu bài
+        hoverSound.play().catch(error => {
+            console.error("Không thể phát nhạc:", error);
+        });
+    } else {
+        console.warn("Âm thanh chưa sẵn sàng, đang tải...");
+    }
+});
+
+// Lặp lại nhạc khi kết thúc
+hoverSound.addEventListener('ended', () => {
+    hoverSound.play();
+});
+
+
+
 	</script>
 </html>
