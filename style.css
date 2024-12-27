@@ -1204,7 +1204,7 @@ span{
     opacity: 0;
     transition: 1s;
 }
-.boxMail .boxMail-container .card2 .card2-content:hover .imageCute2{
+.boxMail .boxMail-container .card2 .card2-content .imageCute2{
     animation: cute3 1s linear infinite,
                 cute4 2s 1s forwards;
     transition: 1s;
