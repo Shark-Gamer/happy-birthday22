@@ -1164,7 +1164,6 @@ span{
 }
 .boxMail .boxMail-container .card2:hover h3{
     animation: texth3 2s forwards;
-    animation-delay: 1s;
     transition: 1s;
 }
 @keyframes texth3{
@@ -1188,7 +1187,6 @@ span{
 }
 .boxMail .boxMail-container .card2:hover h2{
     animation: texth2 2s forwards;
-    animation-delay: 2s;
     transition: 1s;
 }
 @keyframes texth2{
@@ -1204,12 +1202,11 @@ span{
     top: 5px;
     left: 20px;
     opacity: 0;
-    transition: 0s;
+    transition: 1s;
 }
 .boxMail .boxMail-container .card2 .card2-content:hover .imageCute2{
     animation: cute3 1s linear infinite,
-                cute4 3s 2s forwards;
-    animation-delay: 2s;
+                cute4 2s 1s forwards;
     transition: 1s;
 }
 @keyframes cute3{
