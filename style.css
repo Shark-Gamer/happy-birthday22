@@ -867,7 +867,7 @@ span{
     opacity: 0;
     visibility: hidden;
     animation: envelope 1s forwards;
-    animation-delay: 11.5s;
+    animation-delay: 5.5s;
     z-index: 100000000;
 }
 .container .mail .fa-envelope{
@@ -1140,7 +1140,7 @@ span{
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     transform-origin: left;
-    transition: all 1s;
+    transition: all 0s;
 }
 .boxMail .boxMail-container .card2 .card2-content{
     width: 100%;
@@ -1163,8 +1163,8 @@ span{
     text-shadow: 0 0 8px red;
 }
 .boxMail .boxMail-container .card2:hover h3{
-    animation: texth3 3s forwards;
-    animation-delay: 2s;
+    animation: texth3 2s forwards;
+    animation-delay: 1s;
     transition: 1s;
 }
 @keyframes texth3{
@@ -1188,7 +1188,7 @@ span{
 }
 .boxMail .boxMail-container .card2:hover h2{
     animation: texth2 2s forwards;
-    animation-delay: 4s;
+    animation-delay: 2s;
     transition: 1s;
 }
 @keyframes texth2{
