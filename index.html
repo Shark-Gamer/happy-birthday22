@@ -161,6 +161,7 @@
 		});
 
 
+
 		// Lấy phần tử âm thanh
 const hoverSound = document.getElementById('hoverSound');
 
@@ -175,7 +176,7 @@ hoverSound.addEventListener('canplaythrough', () => {
 
 // Phát nhạc ngay khi di chuột vào màn hình
 document.addEventListener('mouseenter', () => {
-    if (hoverSound.readyState >= 3) { // Đảm bảo file nhạc đã sẵn sàng
+    if (hoverSound.readyState >= 3 && hoverSound.paused) { // Đảm bảo file nhạc đã sẵn sàng và chưa phát
         hoverSound.currentTime = 0; // Đặt lại về đầu bài
         hoverSound.play().catch(error => {
             console.error("Không thể phát nhạc:", error);
@@ -186,8 +187,8 @@ document.addEventListener('mouseenter', () => {
 // Dừng nhạc khi người dùng chuyển tab hoặc thoát khỏi trang
 document.addEventListener('visibilitychange', () => {
     if (document.hidden) {
-        hoverSound.pause(); // Dừng nhạc khi trang không hiển thị
-    } else if (!hoverSound.paused) {
+        hoverSound.pause(); // Dừng nhạc khi tab không hiển thị
+    } else {
         hoverSound.play().catch(error => {
             console.error("Không thể phát lại nhạc:", error);
         });
@@ -198,6 +199,7 @@ document.addEventListener('visibilitychange', () => {
 hoverSound.addEventListener('ended', () => {
     hoverSound.play();
 });
+
 
 
 
