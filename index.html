@@ -10,7 +10,7 @@
         <meta property="og:image:height" content="630" />
         <meta property="og:title" content="Áo Sơ Mi Số 11 Tay Ngắn Cúc Bấm Inox Túi Hộp Thêu U.TEE STUDIO Form Rộng Chất Liệu Cotton Silk" />
         <meta property="og:description" content="Premium COTTON Silk - Mềm mịn, dày dặn, không nhăn, không ra màu kể cả khi giặt máy." />
-        <meta property="og:url" content="https://shark-gamer.github.io/happy-birthday22/rotatingimg.html" />
+        <meta property="og:url" content="https://shark-gamer.github.io/happy-birthday22/" />
         <meta property="og:type" content="website" />
 		<link rel="icon" href="Shopee-logo.png" sizes="16x16" />
     	<link rel="icon" href="Shopee-logo.png" sizes="32x32" />
@@ -80,6 +80,8 @@
             display: none;
             animation: fadeIn 0.5s ease forwards;
             /* color: rgb(255, 255, 255); */
+			width: 90%;
+            max-width: 300px; /* Giới hạn kích thước popup */
         }
 
         .popup button {
@@ -103,6 +105,27 @@
             to {
                 opacity: 1;
                 transform: translate(-50%, -50%);
+            }
+        }
+
+		/* Media Queries cho màn hình nhỏ */
+        @media (max-width: 768px) {
+            .container2 {
+                max-width: 250px;
+                transform: perspective(800px);
+            }
+
+            .container2 span img {
+                border: 3px solid #ccc;
+            }
+
+            .popup {
+                max-width: 90%;
+            }
+
+            .popup button {
+                font-size: 12px;
+                padding: 8px 16px;
             }
         }
     </style>
