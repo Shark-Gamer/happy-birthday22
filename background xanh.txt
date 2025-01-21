@@ -3,20 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Premium COTTON Silk - Mềm mịn, dày dặn, không nhăn, không ra màu kể cả khi giặt máy." />
-        <meta name="keywords" content="áo sơ mi, sơ mi, sơ mi nam, utee brand" />
-		<meta property="og:image" content="https://shark-gamer.github.io/happy-birthday22/Shopee1.jpg" />
-	    <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:title" content="Áo Sơ Mi Số 11 Tay Ngắn Cúc Bấm Inox Túi Hộp Thêu U.TEE STUDIO Form Rộng Chất Liệu Cotton Silk" />
-        <meta property="og:description" content="Premium COTTON Silk - Mềm mịn, dày dặn, không nhăn, không ra màu kể cả khi giặt máy." />
-        <meta property="og:url" content="https://shark-gamer.github.io/happy-birthday22/" />
-        <meta property="og:type" content="website" />
-		<link rel="icon" href="Shopee-logo.png" sizes="16x16" />
-    	<link rel="icon" href="Shopee-logo.png" sizes="32x32" />
-    	<link rel="icon" href="Shopee-logo.png" sizes="64x64" />
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
-    <title>Áo Sơ Mi Số 11 Tay Ngắn Cúc Bấm Inox Túi Hộp Thêu U.TEE STUDIO Form Rộng Chất Liệu Cotton Silk</title>
+    <meta name="description" content="Chúc mừng sinh nhật với hiệu ứng đẹp mắt!" />
+    <meta name="keywords" content="sinh nhật, happy birthday, hiệu ứng đẹp" />
+    <title>Chúc Mừng Sinh Nhật</title>
     <style>
         body {
             margin: 0;
@@ -30,13 +19,15 @@
             align-items: center;
             min-height: 100vh;
             color: #fff;
+            position: relative;
         }
 
-        /* h2 {
+        h1 {
+            font-size: 2.5rem;
             text-align: center;
             text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
             margin-bottom: 20px;
-        } */
+        }
 
         .container2 {
             position: relative;
@@ -66,20 +57,6 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.5);   
         }
 
-        .container2 span::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80%;
-            height: 30px;
-            background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
-            filter: blur(10px);
-            opacity: 0.6;
-            animation: lightEffect 2s infinite;
-        }
-
         @keyframes gallery {
             0% {
                 transform: perspective(1000px) rotateY(0deg);
@@ -89,34 +66,22 @@
             }
         }
 
-        @keyframes lightEffect {
-            0%, 100% {
-                transform: translateX(-50%) scale(1);
-                opacity: 0.6;
-            }
-            50% {
-                transform: translateX(-50%) scale(1.2);
-                opacity: 0.8;
-            }
-        }
-
         .popup {
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: rgba(255, 255, 255, 0.289);
+            background: rgba(255, 255, 255, 0.9);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             padding: 30px 40px;
             border-radius: 15px;
             text-align: center;
             display: none;
             animation: popupEffect 1s ease forwards;
-            color: #ff6347;
         }
 
         .popup h2 {
-            /* font-size: 1.8rem; */
+            font-size: 1.8rem;
             color: #ff6347;
             margin-bottom: 10px;
         }
@@ -149,6 +114,68 @@
             }
         }
 
+        .aurora {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: -2;
+        }
+
+        .aurora span {
+            position: absolute;
+            display: block;
+            width: 200px;
+            height: 600px;
+            background: linear-gradient(180deg, rgba(0,255,128,0.3), rgba(0,255,255,0.05));
+            filter: blur(50px);
+            animation: auroraEffect 10s linear infinite;
+            transform: rotate(45deg);
+        }
+
+        .aurora span:nth-child(1) {
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .aurora span:nth-child(2) {
+            left: 30%;
+            animation-delay: 2s;
+        }
+
+        .aurora span:nth-child(3) {
+            left: 50%;
+            animation-delay: 4s;
+        }
+
+        .aurora span:nth-child(4) {
+            left: 70%;
+            animation-delay: 6s;
+        }
+
+        .aurora span:nth-child(5) {
+            left: 90%;
+            animation-delay: 8s;
+        }
+
+        @keyframes auroraEffect {
+            0% {
+                transform: translateY(0) rotate(45deg);
+                opacity: 0.4;
+            }
+            50% {
+                transform: translateY(-20px) rotate(45deg);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(0) rotate(45deg);
+                opacity: 0.4;
+            }
+        }
+
         .background-effect {
             position: absolute;
             top: 0;
@@ -170,16 +197,6 @@
             box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
         }
 
-        .background-effect span:nth-child(odd) {
-            background: linear-gradient(to bottom, #ff9a9e, rgba(255, 154, 158, 0.3));
-            box-shadow: 0 0 15px rgba(255, 154, 158, 0.8);
-        }
-
-        .background-effect span:nth-child(even) {
-            background: linear-gradient(to bottom, #fbc2eb, rgba(251, 194, 235, 0.3));
-            box-shadow: 0 0 15px rgba(251, 194, 235, 0.8);
-        }
-
         @keyframes comet {
             0% {
                 transform: translateY(-150px) translateX(0) rotate(45deg);
@@ -190,145 +207,24 @@
                 opacity: 0;
             }
         }
-
-        .aurora {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -2;
-            overflow: hidden;
-            /* background: radial-gradient(circle, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%); */
-            pointer-events: none;
-        }
-
-        .aurora span {
-            position: absolute;
-            display: block;
-            width: 300px;
-            height: 600px;
-            background: linear-gradient(180deg, rgba(0,255,128,0.3), rgba(0,255,255,0.05));
-            filter: blur(100px);
-            animation: auroraMovement 10s linear infinite;
-            animation: auroraEffect 6s linear infinite;
-            border-radius: 50%;
-            opacity: 0.7;
-            transform: rotate(45deg);
-        }
-
-        .aurora span:nth-child(1) {
-            top: 10%;
-            left: 20%;
-            animation-delay: 0s;
-            background: radial-gradient(circle, rgba(173,216,230,0.5) 0%, rgba(0,0,0,0) 70%);
-        }
-
-        .aurora span:nth-child(2) {
-            top: 30%;
-            left: 40%;
-            animation-delay: 1.5s;
-            background: radial-gradient(circle, rgba(255,182,193,0.5) 0%, rgba(0,0,0,0) 70%);
-        }
-
-        .aurora span:nth-child(3) {
-            top: 50%;
-            left: 60%;
-            animation-delay: 3s;
-        }
-
-        .aurora span:nth-child(4) {
-            top: 70%;
-            left: 80%;
-            animation-delay: 4.5s;
-        }
-
-        .aurora span:nth-child(5) {
-            top: 90%;
-            left: 100%;
-            animation-delay: 6s;
-        }
-
-        @keyframes auroraMovement {
-            0% {
-                transform: translate(-50%, -50%) scale(1);
-            }
-            50% {
-                transform: translate(-60%, -40%) scale(1.2);
-            }
-            100% {
-                transform: translate(-50%, -50%) scale(1);
-            }
-        }
-
-        @keyframes auroraEffect {
-            0% {
-                transform: translateY(0) rotate(45deg);
-                opacity: 0.4;
-            }
-            50% {
-                transform: translateY(-20px) rotate(45deg);
-                opacity: 0.8;
-            }
-            100% {
-                transform: translateY(0) rotate(45deg);
-                opacity: 0.4;
-            }
-        }
-
-        #button-icon {
-            /* margin-top: 10px; */
-            color: #ff7e5f;
-            font-size: 1.5rem;
-        }
-
-        /* Thiết kế cho PC */
-        @media (min-width: 768px) {
-            .container2 {
-                width: 200px;
-                height: 350px;
-            }
-
-            .container2 span img {
-                width: 100%;
-                height: 100%;
-            }
-
-            /* .popup button {
-                font-size: 1rem;
-            } */
-        }
-
-        /* Thiết kế cho điện thoại */
-        @media (max-width: 10px) {
-            .container2 {
-                width: 15%;
-                /* max-width: 250px; */
-                height: auto;
-            }
-
-            .container2 span img {
-                width: 15%;
-                height: auto;
-            }
-
-            /* .popup {
-                max-width: 280px;
-            } */
-
-            .popup button {
-                padding: 4px 8px;
-            }
-        }
-		.popup i {
-            color: #ff6347; /* Màu đỏ */
-        }
-        .popup .button-icon {
-            color: #32cd32; /* Màu xanh lá cây cho nút */
-        }
     </style>
 </head>
 <body>
+    <div class="container2">
+        <span style="--i:1"><img src="ngocminh1.jpg" alt="Hình 1" /></span>
+        <span style="--i:2"><img src="ngocminh2.jpg" alt="Hình 2" /></span>
+        <span style="--i:3"><img src="ngocminh3.jpg" alt="Hình 3" /></span>
+        <span style="--i:4"><img src="ngocminh4.jpg" alt="Hình 4" /></span>
+        <span style="--i:5"><img src="ngocminh5.jpg" alt="Hình 5" /></span>
+        <span style="--i:6"><img src="minh.n.jpg" alt="Hình 6" /></span>
+        <span style="--i:7"><img src="ngocminh5.jpg" alt="Hình 5" /></span>
+        <span style="--i:8"><img src="minh.n.jpg" alt="Hình 6" /></span>
+    </div>
+    <div class="popup" id="popup">
+        <h2>Chúc mừng sinh nhật!</h2>
+        <p>Hãy nhấn nút để mở món quà bất ngờ!</p>
+        <button onclick="redirect()">Nhấn vào đây</button>
+    </div>
     <div class="aurora">
         <span></span>
         <span></span>
@@ -336,36 +232,8 @@
         <span></span>
         <span></span>
     </div>
-    <div class="container2">
-        <span style="--i:1"><img src="ngocminh1.jpg" alt="Hình 1" /></span>
-        <span style="--i:2"><img src="ngocminh2.jpg" alt="Hình 2" /></span>
-        <span style="--i:3"><img src="ngocminh3.jpg" alt="Hình 3" /></span>
-        <span style="--i:4"><img src="ngocminh4.jpg" alt="Hình 4" /></span>
-        <span style="--i:5"><img src="ngocminh5.jpg" alt="Hình 5" /></span>
-        <span style="--i:6"><img src="ngocminh9.jpg" alt="Hình 6" /></span>
-        <span style="--i:7"><img src="ngocminh6.jpg" alt="Hình 5" /></span>
-        <span style="--i:8"><img src="ngocminh7.jpg" alt="Hình 6" /></span>
-    </div>
-    <div class="popup" id="popup">
-        <h2>Chúc mừng sinh nhật!</h2>
-        <p><b>Nhấn Nút Bên Dưới Đi!</b></p>
-        <p><b>Sau Đó Nhấn Vào</b> <i id="button-icon" class="fas fa-envelope"></i></p>
-        <button onclick="redirect()">Nhấn vào đây</button>
-    </div>
     <div class="background-effect">
         <!-- Các phần tử hiệu ứng nổi bật -->
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
         <span></span>
         <span></span>
         <span></span>
@@ -446,7 +314,7 @@
 
         // Chuyển hướng
         function redirect() {
-            window.location.href = "letterbirthday.html"; // Đổi đường dẫn đến trang quà tặng
+            window.location.href = "surprise.html"; // Đổi đường dẫn đến trang quà tặng
         }
 
         // Tạo hiệu ứng nổi bật
