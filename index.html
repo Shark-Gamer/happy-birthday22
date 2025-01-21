@@ -282,50 +282,50 @@
             font-size: 1.5rem;
         }
 
-        /* Thiết kế cho PC */
-        @media (min-width: 768px) {
-            .container2 {
-                width: 200px;
-                height: 350px;
-            }
-
-            .container2 span img {
-                width: 100%;
-                height: 100%;
-            }
-
-            /* .popup button {
-                font-size: 1rem;
-            } */
+        /* Responsive Styles */
+    @media (max-width: 768px) {
+        body {
+            justify-content: flex-start;
+            padding: 20px;
         }
 
-        /* Thiết kế cho điện thoại */
-        @media (max-width: 10px) {
-            .container2 {
-                width: 15%;
-                /* max-width: 250px; */
-                height: auto;
-            }
-
-            .container2 span img {
-                width: 15%;
-                height: auto;
-            }
-
-            /* .popup {
-                max-width: 280px;
-            } */
-
-            .popup button {
-                padding: 4px 8px;
-            }
+        .container2 {
+            width: 200px;
+            height: 300px;
         }
-		.popup i {
-            color: #ff6347; /* Màu đỏ */
+
+        .popup {
+            width: 90%;
+            padding: 20px;
         }
-        .popup .button-icon {
-            color: #32cd32; /* Màu xanh lá cây cho nút */
+
+        .aurora span {
+            width: 150px;
+            height: 300px;
         }
+
+        .background-effect span {
+            width: 4px;
+            height: 80px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .container2 {
+            width: 150px;
+            height: 250px;
+        }
+
+        .popup button {
+            font-size: 0.9rem;
+            padding: 10px 15px;
+        }
+
+        .aurora span {
+            width: 100px;
+            height: 200px;
+        }
+    }
     </style>
 </head>
 <body>
