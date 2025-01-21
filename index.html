@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Premium COTTON Silk - Mềm mịn, dày dặn, không nhăn, không ra màu kể cả khi giặt máy." />
         <meta name="keywords" content="áo sơ mi, sơ mi, sơ mi nam, utee brand" />
-		<meta property="og:image" content="https://shark-gamer.github.io/happy-birthday22/Shopee1.jpg" />
+		<meta property="og:image" content="https://shark-gamer.github.io/happy-birthday22/thumbnail.webp" />
 	    <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:title" content="Áo Sơ Mi Số 11 Tay Ngắn Cúc Bấm Inox Túi Hộp Thêu U.TEE STUDIO Form Rộng Chất Liệu Cotton Silk" />
@@ -282,50 +282,51 @@
             font-size: 1.5rem;
         }
 
-        /* Responsive Styles */
-    @media (max-width: 768px) {
-        body {
-            justify-content: flex-start;
-            padding: 20px;
-        }
-
-        .container2 {
-            width: 200px;
-            height: 300px;
-        }
-
-        .popup {
-            width: 90%;
-            padding: 20px;
-        }
-
-        .aurora span {
-            width: 150px;
-            height: 300px;
-        }
-
-        .background-effect span {
-            width: 4px;
-            height: 80px;
-        }
+        /* Responsive - Hiển thị riêng cho thiết bị di động */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Tăng kích cỡ chữ trên di động */
     }
 
-    @media (max-width: 480px) {
-        .container2 {
-            width: 150px;
-            height: 250px;
-        }
-
-        .popup button {
-            font-size: 0.9rem;
-            padding: 10px 15px;
-        }
-
-        .aurora span {
-            width: 100px;
-            height: 200px;
-        }
+    .container2 {
+        max-width: 280px; /* Kích thước nhỏ hơn cho màn hình nhỏ */
     }
+
+    .popup {
+        padding: 20px 10px; /* Thu nhỏ popup */
+    }
+
+    .popup button {
+        font-size: 0.9rem; /* Nhỏ hơn một chút trên di động */
+    }
+
+    .container2 span img {
+        border-width: 2px; /* Viền nhỏ hơn trên di động */
+    }
+}
+
+/* Responsive - Hiển thị riêng cho PC */
+@media (min-width: 769px) {
+    body {
+        font-size: 16px; /* Phông chữ lớn hơn trên PC */
+    }
+
+    .container2 {
+        max-width: 600px; /* Kích thước lớn hơn cho màn hình lớn */
+    }
+
+    .popup {
+        padding: 40px 30px; /* Tăng kích thước popup */
+    }
+
+    .popup button {
+        font-size: 1.1rem; /* Lớn hơn trên màn hình lớn */
+    }
+
+    .container2 span img {
+        border-width: 4px; /* Viền rõ nét trên PC */
+    }
+}
     </style>
 </head>
 <body>
