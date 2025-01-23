@@ -102,10 +102,6 @@
             width: 90%; /* Chiếm 90% chiều rộng container */
             max-width: 100%; /* Đảm bảo không tràn màn hình */
             height: auto; /* Tự điều chỉnh chiều cao */
-            text-align: center; /* Căn giữa nội dung trong lá thư */
-            padding: 10px; /* Thêm khoảng cách bên trong */
-            background-color: white; /* Đặt nền để dễ nhìn */
-            border-radius: 10px; /* Bo tròn góc */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng bóng */
         }
     
