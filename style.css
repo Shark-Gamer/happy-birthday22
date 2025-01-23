@@ -7,165 +7,165 @@
 }
 
 
-/* Đối với màn hình nhỏ (di động) */
+/* Đối với màn hình nhỏ (di động)
 @media (max-width: 480px) {
-    /* Tổng thể */
+    Tổng thể
     body {
-        font-size: 12px; /* Thu nhỏ font chữ */
+        font-size: 12px; Thu nhỏ font chữ
         display: flex;
         flex-direction: column;
-        align-items: center; /* Căn giữa nội dung theo chiều ngang */
-        justify-content: center; /* Căn giữa nội dung theo chiều dọc */
-        overflow-x: hidden; /* Ngăn tràn màn hình ngang */
-        padding: 10px; /* Khoảng cách viền ngoài */
+        align-items: center; Căn giữa nội dung theo chiều ngang
+        justify-content: center; Căn giữa nội dung theo chiều dọc
+        overflow-x: hidden; Ngăn tràn màn hình ngang
+        padding: 10px; Khoảng cách viền ngoài
     }
 
-    /* Container chính */
+    Container chính
     .container {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Căn giữa nội dung theo chiều ngang */
-        justify-content: center; /* Căn giữa nội dung theo chiều dọc */
-        width: 100%; /* Chiếm toàn bộ chiều rộng màn hình */
-        height: auto; /* Tự động điều chỉnh theo nội dung */
-        margin: 0 auto; /* Căn giữa nội dung */
+        align-items: center; Căn giữa nội dung theo chiều ngang
+        justify-content: center; Căn giữa nội dung theo chiều dọc
+        width: 100%; Chiếm toàn bộ chiều rộng màn hình
+        height: auto; Tự động điều chỉnh theo nội dung
+        margin: 0 auto; Căn giữa nội dung
     }
 
-    /* Hộp nội dung */
+    Hộp nội dung
     .container .boxcontainer {
-        width: 100%; /* Chiếm toàn bộ màn hình */
-        max-width: 100%; /* Đảm bảo không tràn màn hình */
+        width: 100%; Chiếm toàn bộ màn hình
+        max-width: 100%; Đảm bảo không tràn màn hình
         display: flex;
         flex-direction: column;
-        align-items: center; /* Căn giữa nội dung theo chiều ngang */
-        justify-content: center; /* Căn giữa nội dung theo chiều dọc */
-        height: auto; /* Tự động điều chỉnh chiều cao */
+        align-items: center; Căn giữa nội dung theo chiều ngang
+        justify-content: center; Căn giữa nội dung theo chiều dọc
+        height: auto; Tự động điều chỉnh chiều cao
     }
 
-    /* Hình ảnh */
+    Hình ảnh
     .container .image img {
-        width: 90%; /* Thu nhỏ hình ảnh */
+        width: 90%; Thu nhỏ hình ảnh
         max-width: 100%;
         height: auto;
     }
 
-    /* Chữ Happy Birthday */
+    Chữ Happy Birthday
     .container .text-happybirthday img {
-        width: 80%; /* Thu nhỏ chữ */
+        width: 80%; Thu nhỏ chữ
         max-width: 100%;
         height: auto;
-        margin: 0 auto; /* Căn giữa */
+        margin: 0 auto; Căn giữa
     }
 
-    /* Bánh sinh nhật */
+    Bánh sinh nhật
     .container .cake img {
-        width: 150px; /* Thu nhỏ bánh */
+        width: 150px; Thu nhỏ bánh
         height: auto;
-        margin: 10px auto; /* Căn giữa */
+        margin: 10px auto; Căn giữa
     }
 
-    /* Bóng bay */
+    Bóng bay
     .box-balloon .balloon-item1 img {
-        width: 40px; /* Thu nhỏ bóng bay */
+        width: 40px; Thu nhỏ bóng bay
         height: auto;
-        margin: 5px auto; /* Căn giữa */
+        margin: 5px auto; Căn giữa
     }
 
-    /* Đám mây */
+    Đám mây
     .container .cloud img {
-        width: 60px; /* Thu nhỏ đám mây */
-        margin: 5px auto; /* Căn giữa */
+        width: 60px; Thu nhỏ đám mây
+        margin: 5px auto; Căn giữa
     }
 
-    /* Pháo hoa */
+    Pháo hoa
     .container .box-firework .firework img {
-        width: 70px; /* Thu nhỏ pháo hoa */
+        width: 70px; Thu nhỏ pháo hoa
         height: auto;
-        margin: 5px auto; /* Căn giữa */
+        margin: 5px auto; Căn giữa
     }
     
-    /* Hộp thư */
+    Hộp thư
     .boxMail {
-        width: 100%; /* Chiếm toàn bộ chiều rộng màn hình */
-        height: 100%; /* Chiếm toàn bộ chiều cao màn hình */
-        padding: 10px; /* Khoảng cách nội bộ */
-        transform: scale(1); /* Hiển thị đầy đủ kích thước */
+        width: 100%; Chiếm toàn bộ chiều rộng màn hình
+        height: 100%; Chiếm toàn bộ chiều cao màn hình
+        padding: 10px; Khoảng cách nội bộ
+        transform: scale(1); Hiển thị đầy đủ kích thước
     }
 
-    /* Container hộp thư */
+    Container hộp thư
     .boxMail .boxMail-container {
-        width: 100%; /* Chiếm toàn bộ màn hình */
-        height: auto; /* Tự động điều chỉnh chiều cao theo nội dung */
-        flex-direction: column; /* Hiển thị theo chiều dọc */
+        width: 100%; Chiếm toàn bộ màn hình
+        height: auto; Tự động điều chỉnh chiều cao theo nội dung
+        flex-direction: column; Hiển thị theo chiều dọc
     }
 
-    /* Văn bản bên trong hộp thư */
+    Văn bản bên trong hộp thư
     .boxMail .boxMail-container .card2 {
-        padding: 10px; /* Thêm khoảng cách nội bộ */
-        font-size: 14px; /* Điều chỉnh kích thước chữ */
-        line-height: 1.4; /* Tăng khoảng cách giữa các dòng */
-        word-wrap: break-word; /* Tự động xuống dòng */
-        overflow-wrap: break-word; /* Hỗ trợ trình duyệt khác */
+        padding: 10px; Thêm khoảng cách nội bộ
+        font-size: 14px; Điều chỉnh kích thước chữ
+        line-height: 1.4; Tăng khoảng cách giữa các dòng
+        word-wrap: break-word; Tự động xuống dòng
+        overflow-wrap: break-word; Hỗ trợ trình duyệt khác
     }
 
     .boxMail .boxMail-container .card2 h2 {
-        font-size: 16px; /* Điều chỉnh kích thước tiêu đề */
-        line-height: 1.5; /* Tăng khoảng cách dòng tiêu đề */
-        text-align: justify; /* Căn đều nội dung */
+        font-size: 16px; Điều chỉnh kích thước tiêu đề
+        line-height: 1.5; Tăng khoảng cách dòng tiêu đề
+        text-align: justify; Căn đều nội dung
     }
 
     .boxMail .boxMail-container .card2 h3 {
-        font-size: 18px; /* Điều chỉnh kích thước chữ */
-        margin-bottom: 10px; /* Tạo khoảng cách phía dưới tiêu đề */
+        font-size: 18px; Điều chỉnh kích thước chữ
+        margin-bottom: 10px; Tạo khoảng cách phía dưới tiêu đề
     }
 
-    /* Hình ảnh trong hộp thư */
+    Hình ảnh trong hộp thư
     .boxMail .boxMail-container img {
-        width: 90%; /* Đảm bảo hình ảnh không tràn màn hình */
-        height: auto; /* Tự động căn chỉnh chiều cao */
-        margin: 10px auto; /* Căn giữa hình ảnh */
+        width: 90%; Đảm bảo hình ảnh không tràn màn hình
+        height: auto; Tự động căn chỉnh chiều cao
+        margin: 10px auto; Căn giữa hình ảnh
     }
 
-    /* Nút đóng thư */
+    Nút đóng thư
     .boxMail .fa-xmark {
-        font-size: 24px; /* Kích thước nút nhỏ hơn */
+        font-size: 24px; Kích thước nút nhỏ hơn
         position: absolute;
-        top: 10px; /* Cách mép trên */
-        right: 10px; /* Cách mép phải */
+        top: 10px; Cách mép trên
+        right: 10px; Cách mép phải
         cursor: pointer;
     }
 
-    /* Hộp quà */
+    Hộp quà
     .container .box-giftbox img {
-        width: 30px; /* Thu nhỏ hộp quà */
+        width: 30px; Thu nhỏ hộp quà
         height: auto;
-        margin: 5px auto; /* Căn giữa */
+        margin: 5px auto; Căn giữa
     }
 
-    /* Hoạt hình ngạc nhiên */
+    Hoạt hình ngạc nhiên
     .container .cute1 img,
     .container .cute2 img {
-        width: 50px; /* Thu nhỏ hoạt hình */
+        width: 50px; Thu nhỏ hoạt hình
         height: auto;
-        margin: 5px auto; /* Căn giữa */
+        margin: 5px auto; Căn giữa
     }
 
-    /* Văn bản */
+    Văn bản
     h3, h2 {
-        font-size: 12px; /* Giảm kích cỡ chữ */
-        line-height: 1.4; /* Tăng khoảng cách dòng */
-        text-align: center; /* Căn giữa nội dung */
+        font-size: 12px; Giảm kích cỡ chữ
+        line-height: 1.4; Tăng khoảng cách dòng
+        text-align: center; Căn giữa nội dung
     }
 }
 
-/* Đối với màn hình lớn (PC) */
+Đối với màn hình lớn (PC)
 @media (min-width: 769px) {
     .container .boxcontainer {
         width: 700px;
         height: 450px;
     }
 }
-
+ */
 body{
     display: flex;
     justify-content: center;
