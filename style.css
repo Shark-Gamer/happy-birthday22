@@ -83,8 +83,7 @@
         height: auto;
         margin: 5px auto; /* Căn giữa */
     }
-
-    @media (max-width: 480px) {
+    
         /* Hộp thư */
         .boxMail {
             width: 90%; /* Chiếm 90% chiều rộng màn hình */
@@ -147,7 +146,7 @@
             top: 10px; /* Căn chỉnh lề trên */
             right: 10px; /* Căn chỉnh lề phải */
         }
-    }
+    
     
     /* Hộp quà */
     .container .box-giftbox img {
