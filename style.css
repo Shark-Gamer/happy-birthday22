@@ -11,98 +11,125 @@
 @media (max-width: 480px) {
     /* Tổng thể */
     body {
-        font-size: 12px; /* Thu nhỏ kích cỡ chữ */
-        overflow-x: hidden; /* Ngăn cuộn ngang */
+        font-size: 12px; /* Thu nhỏ font chữ */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Căn giữa nội dung theo chiều ngang */
+        justify-content: center; /* Căn giữa nội dung theo chiều dọc */
+        overflow-x: hidden; /* Ngăn tràn màn hình ngang */
+        padding: 10px; /* Khoảng cách viền ngoài */
     }
 
+    /* Container chính */
     .container {
-        padding: 10px;
-        margin: 0 auto; /* Căn giữa container */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Căn giữa nội dung theo chiều ngang */
+        justify-content: center; /* Căn giữa nội dung theo chiều dọc */
+        width: 100%; /* Chiếm toàn bộ chiều rộng màn hình */
+        height: auto; /* Tự động điều chỉnh theo nội dung */
+        margin: 0 auto; /* Căn giữa nội dung */
     }
 
-    /* Hộp chính */
+    /* Hộp nội dung */
     .container .boxcontainer {
-        width: 100%; /* Chiếm toàn bộ chiều rộng màn hình */
+        width: 100%; /* Chiếm toàn bộ màn hình */
         max-width: 100%; /* Đảm bảo không tràn màn hình */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Căn giữa nội dung theo chiều ngang */
+        justify-content: center; /* Căn giữa nội dung theo chiều dọc */
         height: auto; /* Tự động điều chỉnh chiều cao */
     }
 
     /* Hình ảnh */
     .container .image img {
-        width: 100%; /* Chiếm toàn bộ chiều rộng container */
-        height: auto;
-    }
-
-    /* Chữ "Happy Birthday" */
-    .container .text-happybirthday img {
-        width: 80%; /* Giảm kích cỡ chữ */
-        max-width: 100%; /* Đảm bảo không tràn màn hình */
-        height: auto;
-    }
-
-    /* Bánh sinh nhật */
-    .container .cake img {
-        width: 60%; /* Tự động vừa màn hình nhỏ */
+        width: 90%; /* Thu nhỏ hình ảnh */
         max-width: 100%;
         height: auto;
     }
 
+    /* Chữ Happy Birthday */
+    .container .text-happybirthday img {
+        width: 80%; /* Thu nhỏ chữ */
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto; /* Căn giữa */
+    }
+
+    /* Bánh sinh nhật */
+    .container .cake img {
+        width: 150px; /* Thu nhỏ bánh */
+        height: auto;
+        margin: 10px auto; /* Căn giữa */
+    }
+
     /* Bóng bay */
     .box-balloon .balloon-item1 img {
-        width: 40px; /* Giảm kích cỡ bóng bay */
+        width: 40px; /* Thu nhỏ bóng bay */
         height: auto;
+        margin: 5px auto; /* Căn giữa */
     }
 
     /* Đám mây */
     .container .cloud img {
-        width: 50px; /* Thu nhỏ đám mây */
+        width: 60px; /* Thu nhỏ đám mây */
         height: auto;
+        margin: 5px auto; /* Căn giữa */
     }
 
     /* Pháo hoa */
     .container .box-firework .firework img {
-        width: 60px; /* Thu nhỏ pháo hoa */
+        width: 70px; /* Thu nhỏ pháo hoa */
         height: auto;
+        margin: 5px auto; /* Căn giữa */
     }
 
     /* Hộp thư */
     .boxMail {
         width: 90%; /* Chiếm phần lớn màn hình */
-        max-width: 100%;
+        max-width: 100%; /* Đảm bảo không tràn màn hình */
         height: auto;
+        display: flex;
+        align-items: center; /* Căn giữa theo chiều ngang */
+        justify-content: center; /* Căn giữa theo chiều dọc */
     }
 
     .boxMail .boxMail-container {
-        flex-direction: column; /* Chuyển về bố cục dọc */
-        align-items: center; /* Căn giữa */
+        display: flex;
+        flex-direction: column; /* Bố cục dọc */
+        align-items: center; /* Căn giữa nội dung */
         gap: 10px; /* Khoảng cách giữa các phần */
     }
 
     .boxMail .boxMail-container .card1,
     .boxMail .boxMail-container .card2 {
-        width: 100%; /* Chiếm toàn bộ chiều rộng */
+        width: 100%; /* Chiếm toàn bộ màn hình */
         max-width: 100%; /* Đảm bảo không tràn */
         height: auto;
+        text-align: center; /* Căn giữa văn bản */
     }
 
     /* Hộp quà */
     .container .box-giftbox img {
         width: 30px; /* Thu nhỏ hộp quà */
         height: auto;
+        margin: 5px auto; /* Căn giữa */
     }
 
     /* Hoạt hình ngạc nhiên */
     .container .cute1 img,
     .container .cute2 img {
-        width: 50px; /* Thu nhỏ */
+        width: 50px; /* Thu nhỏ hoạt hình */
         height: auto;
+        margin: 5px auto; /* Căn giữa */
     }
 
     /* Văn bản */
     h3, h2 {
         font-size: 12px; /* Giảm kích cỡ chữ */
-        line-height: 1.4; /* Điều chỉnh khoảng cách dòng */
-        text-align: center; /* Căn giữa văn bản */
+        line-height: 1.4; /* Tăng khoảng cách dòng */
+        text-align: center; /* Căn giữa nội dung */
     }
 }
 
