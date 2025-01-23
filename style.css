@@ -101,13 +101,7 @@
         /* gap: 10px; */ /* Khoảng cách giữa các phần */
     }
 
-  /*  .boxMail .boxMail-container .card1,
-    .boxMail .boxMail-container .card2 {
-        /* width: 100%; */ /* Chiếm toàn bộ màn hình */
-        /* max-width: 100%; */ /* Đảm bảo không tràn */
-        /* height: auto; */
-        /* text-align: center; */ /* Căn giữa văn bản */
-    } */
+   
 
     /* Hộp quà */
     .container .box-giftbox img {
