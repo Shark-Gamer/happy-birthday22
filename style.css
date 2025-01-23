@@ -84,55 +84,58 @@
         margin: 5px auto; /* Căn giữa */
     }
     
-        /* Hộp thư */
-        .boxMail {
-            width: 90%; /* Chiếm 90% chiều rộng màn hình */
-            max-width: 100%; /* Đảm bảo không tràn màn hình */
-            height: 900px;
-            display: flex;
-            align-items: center; /* Căn giữa theo chiều ngang */
-            justify-content: center; /* Căn giữa theo chiều dọc */
-            padding: 10px; /* Thêm khoảng cách */
-        }
-    
-        /* Card trong lá thư */
-        .boxMail .boxMail-container .card1,
-        .boxMail .boxMail-container .card2 {
-            width: 100%; /* Chiếm toàn bộ chiều rộng */
-            max-width: 100%; /* Đảm bảo không tràn */
-            height: 900px; /* Tự động điều chỉnh chiều cao */
-            overflow: visible; /* Hiển thị đầy đủ nội dung, tránh bị cắt bớt */
-            padding: 10px; /* Thêm khoảng cách bên trong */
-            text-align: justify; /* Căn lề cho nội dung dễ đọc */
-        }
+    /* Hộp thư */
+    .boxMail {
+        width: 90%; /* Chiếm 90% chiều rộng màn hình */
+        max-width: 100%; /* Đảm bảo không tràn màn hình */
+        height: auto;
+        display: flex;
+        align-items: center; /* Căn giữa theo chiều ngang */
+        justify-content: center; /* Căn giữa theo chiều dọc */
+        padding: 10px; /* Thêm khoảng cách */
+    }
 
-        /* Văn bản trong card2 */
-        .boxMail .boxMail-container .card2 h2 {
-            font-size: 14px; /* Kích thước chữ vừa phải */
-            line-height: 1.5; /* Tăng khoảng cách giữa các dòng */
-            padding: 10px; /* Thêm khoảng cách bên trong */
-            word-wrap: break-word; /* Bẻ dòng nếu nội dung quá dài */
-        }
+    /* Card trong lá thư */
+    .boxMail .boxMail-container .card1,
+    .boxMail .boxMail-container .card2 {
+        width: 90%; /* Chiếm 90% chiều rộng container */
+        max-width: 100%; /* Đảm bảo không tràn màn hình */
+        height: auto; /* Tự điều chỉnh chiều cao */
+        text-align: center; /* Căn giữa nội dung trong lá thư */
+        padding: 10px; /* Thêm khoảng cách bên trong */
+        background-color: white; /* Đặt nền để dễ nhìn */
+        border-radius: 10px; /* Bo tròn góc */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng bóng */
+    }
 
-        .boxMail .boxMail-container .card2 h3 {
-            font-size: 16px; /* Tiêu đề nổi bật hơn */
-            margin-bottom: 10px; /* Tạo khoảng cách dưới tiêu đề */
-        }
+    /* Văn bản trong lá thư */
+    .boxMail .boxMail-container .card2 h2 {
+        font-size: 14px; /* Giảm kích thước chữ */
+        line-height: 1.5; /* Tăng khoảng cách giữa các dòng */
+        text-align: justify; /* Căn lề nội dung */
+        padding: 10px; /* Tạo khoảng cách bên trong */
+    }
 
-        /* Tạo khoảng trống bên dưới các card */
-        .boxMail .boxMail-container .card1,
-        .boxMail .boxMail-container .card2 {
-            margin-bottom: 20px; /* Tạo khoảng cách giữa các thẻ */
-        }
+    .boxMail .boxMail-container .card2 h3 {
+        font-size: 16px; /* Tiêu đề lớn hơn chút */
+        margin-bottom: 10px; /* Tạo khoảng cách dưới tiêu đề */
+    }
 
-        /* Nút đóng thư */
-        .boxMail .fa-xmark {
-            font-size: 24px; /* Giảm kích thước nút đóng */
-            top: 10px; /* Căn chỉnh lề trên */
-            right: 10px; /* Căn chỉnh lề phải */
-        }
-    
-    
+    /* Khoảng cách hình ảnh */
+    .boxMail .boxMail-container .card1 .userImg img,
+    .boxMail .boxMail-container .card2 .card2-content .imageCute2 img {
+        width: 60px; /* Thu nhỏ kích cỡ hình ảnh */
+        height: auto;
+        margin: 10px auto; /* Căn giữa và thêm khoảng cách */
+    }
+
+    /* Nút đóng thư */
+    .boxMail .fa-xmark {
+        font-size: 24px; /* Giảm kích thước nút đóng */
+        top: 10px; /* Căn chỉnh lề trên */
+        right: 10px; /* Căn chỉnh lề phải */
+    }
+
     /* Hộp quà */
     .container .box-giftbox img {
         width: 30px; /* Thu nhỏ hộp quà */
