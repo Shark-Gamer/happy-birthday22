@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center; 
     min-height: 100vh;
-    background: linear-gradient(to right, #CCFFFF, #66FFFF);
+    background: linear-gradient(to top, #00151c, #013a54); /* màu cũ: to right, #CCFFFF, #66FFFF */
     overflow: hidden;
 }
 /* audio {
@@ -33,9 +33,10 @@ body{
     flex-direction: column;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: -5px -5px 15px rgba(255, 255, 255),
-                5px 5px 15px rgb(0, 0, 0, 0.5);
-    background-image: radial-gradient(circle farthest-corner at center, #33CCFF 0%, #99CCFF 100%);
+    box-shadow: -5px -5px 15px rgb(1, 135, 197),
+                5px 5px 15px rgb(0, 0, 0, 0.5); /*màu cũ: -5px -5px 15px rgba(255, 255, 255),
+                5px 5px 15px rgb(0, 0, 0, 0.5) */
+    background-image: radial-gradient(circle farthest-corner at center, #00222d 0%, #024b6d 100%); /* màu cũ: #33CCFF 0%, #99CCFF 100% */
     animation: bgr 4s forwards;
     transition: 1s;
 }
@@ -494,7 +495,7 @@ body{
     opacity: 0;
     visibility: hidden;
     transform: translate(-50px, 35px);
-    /* transform: translate(-60px, -50px); */
+    transform: translate(-60px, -50px);
     animation: firework1 2s linear infinite;
     animation-delay: 6s;
     transition: all 1s ease-in-out;
@@ -1073,7 +1074,7 @@ span{
 }
 .boxMail .boxMail-container:hover{
     transform: rotate(-5deg);
-    filter: drop-shadow(0 0 10px red);
+    filter: drop-shadow(0 0 10px red); /* màu cũ: 0 0 10px red */
 }
 .boxMail .boxMail-container:hover .card1{
     transform: translate(-187px, -250px) rotateY(-140deg);
@@ -1149,9 +1150,10 @@ span{
     width: 100%;
     height: 100%;
     position: relative;
-    background-color: #8DEEEE;
+    background-color: #025981; /* màu cũ: #8DEEEE */
     transition: all 1s;
     overflow: hidden;
+    color: #e8e7e7; /* xóa để trở về code gốc */
 }
 .boxMail .boxMail-container:hover .card2-content{
     transform: translate(20px, 20px);
@@ -1163,7 +1165,7 @@ span{
     opacity: 0;
     visibility: hidden;
     font-size: 25px;
-    text-shadow: 0 0 8px red;
+    text-shadow: 0 0 8px white; /* màu cũ: 0 0 8px red */
 }
 .boxMail .boxMail-container .card2 h3{
     animation: texth3 2s forwards;
@@ -1275,3 +1277,123 @@ span::before{
     }
 }
 /* ------hết hiệu ứng di chuyển chuột----- */
+
+/* hiệu ứng sao băng */
+.background-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background-effect span {
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 120px;
+    background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0.3));
+    animation: comet 2.5s linear infinite;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+/* Animation cho sao băng */
+@keyframes comet {
+    0% {
+        transform: translateY(-150px) translateX(0) rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) translateX(-50vw) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+.aurora {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    overflow: hidden;
+    /* background: radial-gradient(circle, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%); */
+    pointer-events: none;
+}
+
+.aurora span {
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 600px;
+    background: linear-gradient(180deg, rgba(0,255,128,0.3), rgba(0,255,255,0.05));
+    filter: blur(100px);
+    animation: auroraMovement 10s linear infinite;
+    animation: auroraEffect 6s linear infinite;
+    border-radius: 50%;
+    opacity: 0.7;
+    transform: rotate(45deg);
+}
+
+.aurora span:nth-child(1) {
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+    background: radial-gradient(circle, rgba(173,216,230,0.5) 0%, rgba(0,0,0,0) 70%);
+}
+
+.aurora span:nth-child(2) {
+    top: 30%;
+    left: 40%;
+    animation-delay: 1.5s;
+    background: radial-gradient(circle, rgba(255,182,193,0.5) 0%, rgba(0,0,0,0) 70%);
+}
+
+.aurora span:nth-child(3) {
+    top: 50%;
+    left: 60%;
+    animation-delay: 3s;
+}
+
+.aurora span:nth-child(4) {
+    top: 70%;
+    left: 80%;
+    animation-delay: 4.5s;
+}
+
+.aurora span:nth-child(5) {
+    top: 90%;
+    left: 100%;
+    animation-delay: 6s;
+}
+
+@keyframes auroraMovement {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-60%, -40%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes auroraEffect {
+    0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 0.4;
+    }
+    50% {
+        transform: translateY(-20px) rotate(45deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 0.4;
+    }
+}
+
