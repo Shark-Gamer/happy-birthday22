@@ -1324,50 +1324,50 @@ span::before{
     pointer-events: none;
 }
 
-.aurora span {
+/* .aurora span {
     position: absolute;
     display: block;
     width: 300px;
     height: 600px;
     background: linear-gradient(180deg, rgba(0,255,128,0.3), rgba(0,255,255,0.05));
     filter: blur(100px);
-    animation: auroraMovement 10s linear infinite;
-    animation: auroraEffect 6s linear infinite;
+    animation: auroraMovement 15s linear infinite;
+    animation: auroraEffect 11s linear infinite;
     border-radius: 50%;
-    opacity: 0.7;
+    opacity: 1;
     transform: rotate(45deg);
-}
+} */
 
 .aurora span:nth-child(1) {
     top: 10%;
     left: 20%;
-    animation-delay: 0s;
+    animation-delay: 1s;
     background: radial-gradient(circle, rgba(173,216,230,0.5) 0%, rgba(0,0,0,0) 70%);
 }
 
 .aurora span:nth-child(2) {
     top: 30%;
     left: 40%;
-    animation-delay: 1.5s;
+    animation-delay: 2.5s;
     background: radial-gradient(circle, rgba(255,182,193,0.5) 0%, rgba(0,0,0,0) 70%);
 }
 
 .aurora span:nth-child(3) {
     top: 50%;
     left: 60%;
-    animation-delay: 3s;
+    animation-delay: 4.5s;
 }
 
 .aurora span:nth-child(4) {
     top: 70%;
     left: 80%;
-    animation-delay: 4.5s;
+    animation-delay: 6s;
 }
 
 .aurora span:nth-child(5) {
     top: 90%;
     left: 100%;
-    animation-delay: 6s;
+    animation-delay: 7.5s;
 }
 
 @keyframes auroraMovement {
@@ -1375,7 +1375,7 @@ span::before{
         transform: translate(-50%, -50%) scale(1);
     }
     50% {
-        transform: translate(-60%, -40%) scale(1.2);
+        transform: translate(-70%, -30%) scale(1.5);
     }
     100% {
         transform: translate(-50%, -50%) scale(1);
@@ -1385,15 +1385,15 @@ span::before{
 @keyframes auroraEffect {
     0% {
         transform: translateY(0) rotate(45deg);
-        opacity: 0.4;
+        opacity: 0.6;
     }
     50% {
         transform: translateY(-20px) rotate(45deg);
-        opacity: 0.8;
+        opacity: 1;
     }
     100% {
         transform: translateY(0) rotate(45deg);
-        opacity: 0.4;
+        opacity: 0.6;
     }
 }
 
