@@ -94,7 +94,7 @@
         justify-content: center; /* Căn giữa theo chiều dọc */
         padding: 10px; /* Thêm khoảng cách */
     }
-
+    
     /* Card trong lá thư */
     .boxMail .boxMail-container .card1,
     .boxMail .boxMail-container .card2 {
