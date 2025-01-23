@@ -92,7 +92,6 @@
         display: flex;
         align-items: center; /* Căn giữa nội dung theo chiều ngang */
         justify-content: center; /* Căn giữa nội dung theo chiều dọc */
-        padding: 10px; /* Thêm khoảng cách */
     }
 
     /* Container chính của thư */
@@ -100,7 +99,7 @@
         display: flex;
         flex-direction: column; /* Bố cục dọc */
         align-items: center; /* Căn giữa nội dung */
-        gap: 10px; /* Khoảng cách giữa các phần */
+        /* gap: 10px; */ /* Khoảng cách giữa các phần */
         width: 100%; /* Chiếm toàn bộ chiều rộng */
         max-width: 100%; /* Ngăn tràn màn hình */
     }
@@ -112,7 +111,7 @@
         max-width: 100%; /* Đảm bảo không tràn */
         height: auto; /* Tự điều chỉnh chiều cao */
         text-align: center; /* Căn giữa văn bản */
-        margin-bottom: 10px; /* Khoảng cách giữa các card */
+        /* margin-bottom: 10px; */ /* Khoảng cách giữa các card */
     }
 
     /* Ảnh trong lá thư */
@@ -143,7 +142,7 @@
         top: 10px; /* Căn lề trên */
         right: 10px; /* Căn lề phải */
     }
-    
+
     /* Hộp quà */
     .container .box-giftbox img {
         width: 30px; /* Thu nhỏ hộp quà */
