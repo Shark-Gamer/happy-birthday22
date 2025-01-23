@@ -89,7 +89,6 @@
         width: 90%; /* Chiếm phần lớn màn hình */
         max-width: 100%; /* Đảm bảo không tràn màn hình */
         height: auto;
-        display: flex;
         align-items: center; /* Căn giữa nội dung theo chiều ngang */
         justify-content: center; /* Căn giữa nội dung theo chiều dọc */
     }
@@ -99,7 +98,6 @@
         display: flex;
         flex-direction: column; /* Bố cục dọc */
         align-items: center; /* Căn giữa nội dung */
-        /* gap: 10px; */ /* Khoảng cách giữa các phần */
         width: 100%; /* Chiếm toàn bộ chiều rộng */
         max-width: 100%; /* Ngăn tràn màn hình */
     }
@@ -110,7 +108,6 @@
         width: 100%; /* Chiếm toàn bộ chiều rộng */
         max-width: 100%; /* Đảm bảo không tràn */
         height: auto; /* Tự điều chỉnh chiều cao */
-        text-align: center; /* Căn giữa văn bản */
     }
 
     /* Ảnh trong lá thư */
@@ -131,7 +128,6 @@
     .boxMail .boxMail-container .card2 h3 {
         font-size: 14px; /* Giảm kích cỡ chữ tiêu đề */
         text-align: center; /* Căn giữa chữ tiêu đề */
-        margin-bottom: 10px; /* Thêm khoảng cách dưới tiêu đề */
     }
 
     /* Nút đóng thư */
