@@ -101,7 +101,7 @@
         .boxMail .boxMail-container .card2 {
             width: 90%; /* Chiếm 90% chiều rộng container */
             max-width: 100%; /* Đảm bảo không tràn màn hình */
-            height: 90%; /* Tự điều chỉnh chiều cao */
+            height: 900px; /* Tự điều chỉnh chiều cao */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng bóng */
         }
     
