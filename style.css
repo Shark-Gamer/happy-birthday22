@@ -88,7 +88,7 @@
         .boxMail {
             width: 90%; /* Chiếm 90% chiều rộng màn hình */
             max-width: 100%; /* Đảm bảo không tràn màn hình */
-            height: auto;
+            height: 900px;
             display: flex;
             align-items: center; /* Căn giữa theo chiều ngang */
             justify-content: center; /* Căn giữa theo chiều dọc */
@@ -125,21 +125,6 @@
             margin-bottom: 20px; /* Tạo khoảng cách giữa các thẻ */
         }
 
-        /* Đảm bảo hình ảnh và nội dung trong card không bị tràn */
-        .boxMail .boxMail-container .card1 .userImg img,
-        .boxMail .boxMail-container .card2 .card2-content .imageCute2 img {
-            width: 60px; /* Thu nhỏ kích thước hình ảnh */
-            height: auto;
-            margin: 10px auto; /* Căn giữa và thêm khoảng cách */
-        }
-    
-        /* Khoảng cách hình ảnh */
-        .boxMail .boxMail-container .card1 .userImg img,
-        .boxMail .boxMail-container .card2 .card2-content .imageCute2 img {
-            width: 60px; /* Thu nhỏ kích cỡ hình ảnh */
-            height: auto;
-        }
-    
         /* Nút đóng thư */
         .boxMail .fa-xmark {
             font-size: 24px; /* Giảm kích thước nút đóng */
