@@ -101,7 +101,7 @@
         .boxMail .boxMail-container .card2 {
             width: 90%; /* Chiếm 90% chiều rộng container */
             max-width: 100%; /* Đảm bảo không tràn màn hình */
-            height: auto; /* Tự điều chỉnh chiều cao */
+            height: 90%; /* Tự điều chỉnh chiều cao */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng bóng */
         }
     
@@ -123,7 +123,6 @@
         .boxMail .boxMail-container .card2 .card2-content .imageCute2 img {
             width: 60px; /* Thu nhỏ kích cỡ hình ảnh */
             height: auto;
-            margin: 10px auto; /* Căn giữa và thêm khoảng cách */
         }
     
         /* Nút đóng thư */
