@@ -1312,7 +1312,7 @@ span::before{
     }
 }
 
-.aurora {
+/* .aurora {
     position: absolute;
     top: 0;
     left: 0;
@@ -1320,11 +1320,11 @@ span::before{
     height: 100%;
     z-index: -2;
     overflow: hidden;
-    /* background: radial-gradient(circle, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%); */
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%);
     pointer-events: none;
 }
 
-/* .aurora span {
+.aurora span {
     position: absolute;
     display: block;
     width: 300px;
@@ -1336,7 +1336,7 @@ span::before{
     border-radius: 50%;
     opacity: 1;
     transform: rotate(45deg);
-} */
+}
 
 .aurora span:nth-child(1) {
     top: 10%;
@@ -1396,4 +1396,4 @@ span::before{
         opacity: 0.6;
     }
 }
-
+ */
