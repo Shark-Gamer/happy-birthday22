@@ -11,7 +11,7 @@
 @media (max-width: 480px) {
     /* Container chính */
     .container .boxcontainer {
-        width: 100%; /* Chiếm toàn bộ màn hình */
+        width: 50%; /* Chiếm toàn bộ màn hình */
         height: auto; /* Tự điều chỉnh chiều cao */
         padding: 10px;
     }
