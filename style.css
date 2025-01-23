@@ -101,7 +101,7 @@
         .boxMail .boxMail-container .card2 {
             width: 100%; /* Chiếm toàn bộ chiều rộng */
             max-width: 100%; /* Đảm bảo không tràn */
-            height: auto; /* Tự động điều chỉnh chiều cao */
+            height: 900px; /* Tự động điều chỉnh chiều cao */
             overflow: visible; /* Hiển thị đầy đủ nội dung, tránh bị cắt bớt */
             padding: 10px; /* Thêm khoảng cách bên trong */
             text-align: justify; /* Căn lề cho nội dung dễ đọc */
