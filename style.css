@@ -74,7 +74,6 @@
     /* Đám mây */
     .container .cloud img {
         width: 60px; /* Thu nhỏ đám mây */
-        height: auto;
         margin: 5px auto; /* Căn giữa */
     }
 
@@ -88,7 +87,7 @@
     /* Hộp thư */
     .boxMail {
         width: 90%; /* Chiếm phần lớn màn hình */
-        max-width: 100%; /* Đảm bảo không tràn màn hình */
+        /* max-width: 100%; */ /* Đảm bảo không tràn màn hình */
         height: auto;
         display: flex;
         align-items: center; /* Căn giữa theo chiều ngang */
@@ -99,7 +98,7 @@
         display: flex;
         flex-direction: column; /* Bố cục dọc */
         align-items: center; /* Căn giữa nội dung */
-        gap: 10px; /* Khoảng cách giữa các phần */
+        /* gap: 10px; */ /* Khoảng cách giữa các phần */
     }
 
     .boxMail .boxMail-container .card1,
