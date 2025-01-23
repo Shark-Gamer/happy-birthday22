@@ -111,7 +111,6 @@
         max-width: 100%; /* Đảm bảo không tràn */
         height: auto; /* Tự điều chỉnh chiều cao */
         text-align: center; /* Căn giữa văn bản */
-        /* margin-bottom: 10px; */ /* Khoảng cách giữa các card */
     }
 
     /* Ảnh trong lá thư */
@@ -127,7 +126,6 @@
         font-size: 12px; /* Giảm kích cỡ chữ */
         line-height: 1.5; /* Tăng khoảng cách dòng */
         text-align: justify; /* Căn lề văn bản */
-        padding: 10px; /* Thêm khoảng cách */
     }
 
     .boxMail .boxMail-container .card2 h3 {
