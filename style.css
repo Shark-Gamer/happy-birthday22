@@ -16,6 +16,12 @@
         padding: 10px;
     }
 
+    .container {
+        width: 50%;
+        height: auto;
+        padding: 10px;
+    }
+
     /* Hình ảnh cờ */
     .container .image > img {
         width: 90%; /* Giảm kích thước hình ảnh cờ */
