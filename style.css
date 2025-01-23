@@ -8,37 +8,76 @@
 
 
 /* Đối với màn hình nhỏ (di động) */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+    /* Căn chỉnh kích thước chính cho container */
     .container .boxcontainer {
-        width: 90%; /* Chiếm 90% chiều rộng màn hình */
-        height: auto; /* Điều chỉnh theo nội dung */
+        width: 100%; /* Chiếm toàn bộ màn hình */
+        height: auto; /* Điều chỉnh tự động theo nội dung */
+        padding: 10px; /* Thêm khoảng cách xung quanh */
     }
 
+    /* Hình ảnh cờ */
     .container .image > img {
-        width: 100%; /* Tự động điều chỉnh chiều rộng */
+        width: 80%; /* Hình ảnh chiếm 80% chiều rộng màn hình */
     }
 
+    /* Hình ảnh chữ Happy Birthday */
     .container .text-happybirthday img {
-        width: 80%; /* Thu nhỏ kích cỡ */
+        width: 70%; /* Thu nhỏ phù hợp màn hình nhỏ */
     }
 
+    /* Kích thước bánh sinh nhật */
     .container .cake img {
-        width: 200px; /* Kích cỡ vừa cho di động */
+        width: 200px; /* Nhỏ hơn để phù hợp màn hình nhỏ */
+        height: auto;
     }
 
+    /* Bóng bay */
+    .box-balloon .balloon-item1 img {
+        width: 50px; /* Giảm kích thước bóng bay */
+    }
+
+    /* Đám mây */
+    .container .cloud > img {
+        width: 60px; /* Giảm kích thước hình ảnh mây */
+    }
+
+    /* Firework */
+    .container .box-firework .firework > img {
+        width: 70px; /* Thu nhỏ pháo hoa */
+    }
+
+    /* Mail box */
     .boxMail {
-        width: 95%;
-        height: auto; /* Phù hợp nội dung */
+        width: 90%; /* Chiếm 90% chiều rộng màn hình */
+        height: auto; /* Tự điều chỉnh theo nội dung */
     }
 
     .boxMail .boxMail-container {
-        flex-direction: column; /* Chuyển về bố cục dọc */
+        flex-direction: column; /* Bố cục dọc cho màn hình nhỏ */
         width: 100%;
     }
 
     .boxMail .boxMail-container .card1, .boxMail .boxMail-container .card2 {
-        width: 100%;
-        height: auto;
+        width: 100%; /* Chiếm 100% chiều rộng */
+        height: auto; /* Điều chỉnh tự động */
+    }
+
+    /* Hộp quà */
+    .container .box-giftbox > img {
+        width: 40px; /* Giảm kích thước hộp quà */
+    }
+
+    /* Phông chữ */
+    h3, h2 {
+        font-size: 16px; /* Giảm kích thước chữ */
+        line-height: 1.4; /* Tăng khoảng cách giữa các dòng */
+    }
+
+    /* Hiệu ứng ngạc nhiên */
+    .container .cute1 img,
+    .container .cute2 img {
+        width: 60px; /* Thu nhỏ hình ảnh hoạt hình */
     }
 }
 
