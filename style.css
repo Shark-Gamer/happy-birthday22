@@ -5,6 +5,51 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* Đối với màn hình nhỏ (di động) */
+@media (max-width: 768px) {
+    .container .boxcontainer {
+        width: 90%; /* Chiếm 90% chiều rộng màn hình */
+        height: auto; /* Điều chỉnh theo nội dung */
+    }
+
+    .container .image > img {
+        width: 100%; /* Tự động điều chỉnh chiều rộng */
+    }
+
+    .container .text-happybirthday img {
+        width: 80%; /* Thu nhỏ kích cỡ */
+    }
+
+    .container .cake img {
+        width: 200px; /* Kích cỡ vừa cho di động */
+    }
+
+    .boxMail {
+        width: 95%;
+        height: auto; /* Phù hợp nội dung */
+    }
+
+    .boxMail .boxMail-container {
+        flex-direction: column; /* Chuyển về bố cục dọc */
+        width: 100%;
+    }
+
+    .boxMail .boxMail-container .card1, .boxMail .boxMail-container .card2 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Đối với màn hình lớn (PC) */
+@media (min-width: 769px) {
+    .container .boxcontainer {
+        width: 700px;
+        height: 450px;
+    }
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -36,7 +81,7 @@ body{
     box-shadow: -5px -5px 15px rgb(1, 135, 197),
                 5px 5px 15px rgb(0, 0, 0, 0.5); /*màu cũ: -5px -5px 15px rgba(255, 255, 255),
                 5px 5px 15px rgb(0, 0, 0, 0.5) */
-    background-image: radial-gradient(circle farthest-corner at center, #00222d 0%, #024b6d 100%); /* màu cũ: #33CCFF 0%, #99CCFF 100% */
+    background-image: radial-gradient(circle farthest-corner at center, #013e52 0%, #02557c 100%); /* màu cũ: #33CCFF 0%, #99CCFF 100% */
     animation: bgr 4s forwards;
     transition: 1s;
 }
