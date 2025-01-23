@@ -9,75 +9,84 @@
 
 /* Đối với màn hình nhỏ (di động) */
 @media (max-width: 480px) {
-    /* Căn chỉnh kích thước chính cho container */
+    .container {
+        padding: 10px;
+    }
+
+    /* Bố cục chính */
     .container .boxcontainer {
-        width: 100%; /* Chiếm toàn bộ màn hình */
-        height: auto; /* Điều chỉnh tự động theo nội dung */
-        padding: 10px; /* Thêm khoảng cách xung quanh */
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+        height: auto; /* Tự động điều chỉnh theo nội dung */
+        padding: 10px;
+        border-radius: 5px; /* Giảm độ bo tròn */
+        box-shadow: none; /* Loại bỏ bóng */
     }
 
     /* Hình ảnh cờ */
     .container .image > img {
-        width: 80%; /* Hình ảnh chiếm 80% chiều rộng màn hình */
+        width: 90%; /* Thu nhỏ hình ảnh để vừa màn hình */
     }
 
-    /* Hình ảnh chữ Happy Birthday */
+    /* Chữ Happy Birthday */
     .container .text-happybirthday img {
-        width: 70%; /* Thu nhỏ phù hợp màn hình nhỏ */
+        width: 70%; /* Điều chỉnh kích thước hình ảnh chữ */
+        margin: 0 auto; /* Căn giữa */
     }
 
     /* Kích thước bánh sinh nhật */
     .container .cake img {
-        width: 200px; /* Nhỏ hơn để phù hợp màn hình nhỏ */
+        width: 180px; /* Thu nhỏ kích thước bánh */
         height: auto;
     }
 
-    /* Bóng bay */
+    /* Hiệu ứng bóng bay */
     .box-balloon .balloon-item1 img {
-        width: 50px; /* Giảm kích thước bóng bay */
+        width: 40px; /* Thu nhỏ bóng bay */
     }
 
     /* Đám mây */
     .container .cloud > img {
-        width: 60px; /* Giảm kích thước hình ảnh mây */
+        width: 50px; /* Thu nhỏ hình đám mây */
     }
 
-    /* Firework */
+    /* Pháo hoa */
     .container .box-firework .firework > img {
-        width: 70px; /* Thu nhỏ pháo hoa */
+        width: 60px; /* Thu nhỏ pháo hoa */
     }
 
-    /* Mail box */
+    /* Hộp thư */
     .boxMail {
-        width: 90%; /* Chiếm 90% chiều rộng màn hình */
-        height: auto; /* Tự điều chỉnh theo nội dung */
+        width: 95%; /* Chiếm 95% chiều rộng màn hình */
+        height: auto; /* Tự động điều chỉnh chiều cao */
     }
 
     .boxMail .boxMail-container {
-        flex-direction: column; /* Bố cục dọc cho màn hình nhỏ */
+        flex-direction: column; /* Bố cục dọc */
         width: 100%;
     }
 
     .boxMail .boxMail-container .card1, .boxMail .boxMail-container .card2 {
-        width: 100%; /* Chiếm 100% chiều rộng */
-        height: auto; /* Điều chỉnh tự động */
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+        height: auto; /* Tự động điều chỉnh chiều cao */
+        font-size: 14px; /* Thu nhỏ chữ */
     }
 
-    /* Hộp quà */
+    /* Kích thước hộp quà */
     .container .box-giftbox > img {
-        width: 40px; /* Giảm kích thước hộp quà */
+        width: 30px; /* Thu nhỏ hộp quà */
     }
 
-    /* Phông chữ */
-    h3, h2 {
-        font-size: 16px; /* Giảm kích thước chữ */
-        line-height: 1.4; /* Tăng khoảng cách giữa các dòng */
-    }
-
-    /* Hiệu ứng ngạc nhiên */
+    /* Hình hoạt hình ngạc nhiên */
     .container .cute1 img,
     .container .cute2 img {
-        width: 60px; /* Thu nhỏ hình ảnh hoạt hình */
+        width: 50px; /* Thu nhỏ hình hoạt hình */
+    }
+
+    /* Hiệu ứng chữ */
+    h3, h2 {
+        font-size: 14px; /* Giảm kích thước chữ */
+        line-height: 1.5; /* Tăng khoảng cách dòng */
+        text-align: center; /* Căn giữa văn bản */
     }
 }
 
