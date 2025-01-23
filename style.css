@@ -95,18 +95,6 @@
         padding: 10px; /* Thêm khoảng cách */
     }
 
-    /* Container chính của lá thư */
-    .boxMail .boxMail-container {
-        display: flex;
-        flex-direction: column; /* Chuyển về bố cục dọc */
-        align-items: center; /* Căn giữa nội dung */
-        justify-content: center; /* Căn giữa toàn bộ container */
-        gap: 20px; /* Tạo khoảng cách giữa các lá thư */
-        width: 100%; /* Chiếm toàn bộ chiều rộng */
-        max-width: 100%; /* Ngăn tràn màn hình */
-        margin: 0 auto; /* Căn giữa container */
-    }
-
     /* Card trong lá thư */
     .boxMail .boxMail-container .card1,
     .boxMail .boxMail-container .card2 {
