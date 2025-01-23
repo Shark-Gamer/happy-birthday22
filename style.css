@@ -28,7 +28,7 @@
         justify-content: center; /* Căn giữa nội dung theo chiều dọc */
         width: 100%; /* Chiếm toàn bộ chiều rộng màn hình */
         height: auto; /* Tự động điều chỉnh theo nội dung */
-        margin: 0 auto; /* Căn giữa nội dung */
+        /* margin: 0 auto; */ /* Căn giữa nội dung */
     }
 
     /* Hộp nội dung */
