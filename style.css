@@ -95,7 +95,7 @@
     /* Container hộp thư */
     .boxMail .boxMail-container {
         width: 550px; /* Tăng chiều rộng khung */
-        height: 400px; /* Tăng chiều cao khung */
+        height: 350px; /* Tăng chiều cao khung */
         flex-direction: column; /* Hiển thị theo chiều dọc */
     }
 
