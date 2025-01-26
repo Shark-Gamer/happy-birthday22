@@ -112,12 +112,12 @@
             text-align: center;
             display: none;
             animation: popupEffect 1s ease forwards;
-            color: #ff6347;
+            color: #e03e21; /* màu cũ: #ff6347 */
         }
 
         .popup h2 {
             /* font-size: 1.8rem; */
-            color: #ff6347;
+            color: #e03e21; /* màu cũ: #ff6347 */
             margin-bottom: 10px;
         }
 
@@ -131,11 +131,12 @@
             cursor: pointer;
             font-size: 1rem;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
+            position: relative;
         }
 
         .popup button:hover {
             transform: scale(1.1);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            outline: 2px solid rgba(0, 0, 0, 0.3);
         }
 
         @keyframes popupEffect {
