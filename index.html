@@ -116,6 +116,24 @@
             transition: none; /* Loại bỏ hiệu ứng nếu có */
         }
 
+        /* .popup { */
+        /* position: fixed; */ /* Giữ vị trí cố định trên màn hình */
+        /* top: 50%; */ /* Căn giữa theo chiều dọc */
+        /* left: 50%; */ /* Căn giữa theo chiều ngang */
+        /* transform: translate(-50%, -50%); */ /* Căn giữa hoàn toàn */
+        /* background: rgba(255, 255, 255, 0.289); */ /* Nền mờ */
+        /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */ /* Đổ bóng */
+        /* padding: 30px 40px; */ /* Khoảng cách bên trong */
+        /* border-radius: 15px; */ /* Bo góc */
+        /* text-align: center; */ /* Căn giữa nội dung */
+        /* display: none; */ /* Chỉ hiển thị khi cần */
+        /* width: 300px; */ /* Chiều rộng cố định */
+        /* max-width: 90%; */ /* Đảm bảo hiển thị tốt trên thiết bị nhỏ */
+        /* z-index: 100; */ /* Đặt popup nổi lên trên các phần tử khác */
+        /* transition: opacity 0.3s ease, transform 0.3s ease; */ /* Hiệu ứng mở popup */
+/* } */
+
+
         .popup h2 {
             /* font-size: 1.8rem; */
             color: #e03e21; /* màu cũ: #ff6347 */
@@ -397,6 +415,14 @@
         function redirect() {
             window.location.href = "letterbirthday.html"; // Đổi đường dẫn đến trang quà tặng
         }
+
+        // Hiển thị popup sau 3 giây
+      //  setTimeout(() => {
+          //  const popup = document.getElementById('popup');
+          //  popup.style.display = 'block'; // Hiển thị popup
+          //  popup.style.opacity = '1'; // Tăng độ mờ dần
+       // }, 3000);
+
 
         // Tạo hiệu ứng nổi bật
         const comets = document.querySelectorAll('.background-effect span');
