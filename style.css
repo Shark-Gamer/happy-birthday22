@@ -95,7 +95,7 @@
     /* Container hộp thư */
     .boxMail .boxMail-container {
         width: 550px; /* Tăng chiều rộng khung */
-        height: 300px; /* Tăng chiều cao khung */
+        height: 400px; /* Tăng chiều cao khung */
         flex-direction: column; /* Hiển thị theo chiều dọc */
     }
 
@@ -114,10 +114,10 @@
         text-align: justify; Căn đều nội dung
     } */
 
-    .boxMail .boxMail-container .card2 h3 {
-        font-size: 18px; /* Điều chỉnh kích thước chữ */
-        margin-bottom: 10px; /* Tạo khoảng cách phía dưới tiêu đề */
-    }
+    /* .boxMail .boxMail-container .card2 h3 {
+        font-size: 18px; Điều chỉnh kích thước chữ
+        margin-bottom: 10px; Tạo khoảng cách phía dưới tiêu đề
+    } */
 
     /* Hình ảnh trong hộp thư */
     /* .boxMail .boxMail-container img {
