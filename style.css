@@ -1225,7 +1225,7 @@ span{
 .boxMail .boxMail-container{
     position: absolute;
     width: 750px;
-    height: 500px;
+    height: 550px; /* số cũ: 500px */
     display: flex;
     margin: 0;
     transform: scale(0.9);
@@ -1238,7 +1238,7 @@ span{
     filter: drop-shadow(0 0 10px red); /* màu cũ: 0 0 10px red */
 }
 .boxMail .boxMail-container:hover .card1{
-    transform: translate(-187px, -250px) rotateY(-140deg);
+    transform: translate(-187px, -275px) rotateY(-140deg); /* số cũ: translate(-187px, -250px) rotateY(-140deg) */
 }
 .boxMail .boxMail-container .card1,
 .boxMail .boxMail-container .card2{
