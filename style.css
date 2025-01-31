@@ -171,7 +171,7 @@ body{
     justify-content: center;
     align-items: center; 
     min-height: 100vh;
-    background: linear-gradient(to top, #00151c, #013a54); /* màu cũ: to right, #CCFFFF, #66FFFF */
+    background: linear-gradient(to top, #00151c, #003e5b); /* màu cũ: to right, #CCFFFF, #66FFFF */
     overflow: hidden;
 }
 /* audio {
